@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./src/logo.png" alt="logo">
+
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#"><img src="./src/home.png" alt="Inicio"> Inicio</a></li>
+                <li><a href="#series"><img src="./src/series.png" alt="Series"> Series</a></li>
+                <li><a href="#"><img src="./src/fav.png" alt="Favoritos"> Favoritos</a></li>
+                <li><a href="#"><img src="./src/tendencias.png" alt="Tendencias"> Tendencias</a></li>
+
+
+            </ul>
+        </nav>
+        <a href="registro.html" class="btn"> <button>Registrarse</button></a>
+
+    </header>
+    <div class="blue-space">
+        <div class="slider-box">
+          <div class="texto-principal">
+            <span class="fans">F A N </span>
+            <span class="wiki">W I K I</span>
+          
+        </div>
+            <ul id="slider">
+                <!-- slider con JavaScript -->
+            </ul>
+            
+        </div> 
+    </div>
+    <div id="series" class="dark-space">
+    <div class="Carousel">
+        <h2>Anime</h2>
+        <div class="slick-list" id="slick-list">
+            <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+            </button>
+            <div class="slick-track" id="track">
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Naruto Shippuden</small>Watch</h4>
+                            <picture>
+                                <img src="./src/anime/1.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Jujutsu Kaisen</small>Watch</h4>
+                            <picture>
+                                <img src="./src/anime/2.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Tokyo Revengers</small>Watch</h4>
+                            <picture>
+                                <img src="./src/anime/3.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Demon Slayer</small>Watch</h4>
+                            <picture>
+                                <img src="./src/anime/4.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Attack On Titan</small>Watch</h4>
+                            <picture>
+                                <img src="./src/anime/5.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Parasyte</small>Watch</h4>
+                            <picture>
+                                <img src="./src/anime/6.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Record Of Ragnarok</small>Watch</h4>
+                            <picture>
+                                <img src="./src/anime/7.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Death Note</small>Watch</h4>
+                            <picture>
+                                <img src="./src/anime/8.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+            </button>
+        </div>
+        <h2>Para todos</h2>
+        <div class="slick-list" id="slick-list">
+            <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+            </button>
+            <div class="slick-track" id="track">
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./src/all/1.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./src/all/2.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./src/all/3.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./src/all/4.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./src/all/5.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./src/all/6.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./src/all/7.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./src/all/8.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+            </button>
+            
+            
+    </div>
+    <div class="Carousel">
+        <h2>Super Heroes</h2>
+        <div class="slick-list" id="slick-list">
+            <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+            </button>
+            <div class="slick-track" id="track">
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Naruto Shippuden</small>Watch</h4>
+                            <picture>
+                                <img src="./src/heros/1.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Jujutsu Kaisen</small>Watch</h4>
+                            <picture>
+                                <img src="./src/heros/2.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Tokyo Revengers</small>Watch</h4>
+                            <picture>
+                                <img src="./src/heros/3.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Demon Slayer</small>Watch</h4>
+                            <picture>
+                                <img src="./src/heros/4.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Attack On Titan</small>Watch</h4>
+                            <picture>
+                                <img src="./src/heros/5.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Parasyte</small>Watch</h4>
+                            <picture>
+                                <img src="./src/heros/6.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Record Of Ragnarok</small>Watch</h4>
+                            <picture>
+                                <img src="./src/heros/7.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Death Note</small>Watch</h4>
+                            <picture>
+                                <img src="./src/heros/8.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+            </button>
+        </div>
+        <h2>+18</h2>
+        <div class="slick-list" id="slick-list">
+            <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+            </button>
+            <div class="slick-track" id="track">
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./src/adult/1.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./src/adult/2.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./src/adult/3.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./src/adult/4.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./src/adult/5.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./src/adult/6.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./src/adult/7.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./src/adult/8.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+            </button>
+            
+            
+    </div>
+    <h2>No encontraste la serie que buscabas?</h2>
+    <h3>SUBELA!</h3>
+    <a href="agregar.html" class="btn2"> <button>Aportacion</button></a>
+    </div>
+
+    <footer>
+       <div class="socialIcons">
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+        <a href=""><i class="fa-brands fa-x"></i></a>
+       </div>
+       <div class="footerThings">
+            <ul>
+                <li><a >Acerca de nosotros</a></li>
+                <li><a >Contacto</a></li>
+                <li><a >Noticias</a></li>
+                <li><a >Hola</a></li>
+            </ul>
+       </div>
+    </footer>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

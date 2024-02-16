@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Mi página de wiki</title>
+    <link rel="stylesheet" href="agregar.css" />
+  </head>
+  <body >
+    <header class="header">
+      <div class="logo">
+          <img src="./src/logo.png" alt="logo">
+
+      </div>
+      <nav>
+          <ul class="nav-links">
+              <li><a href="index.html"><img src="./src/home.png" alt="Inicio"> Inicio</a></li>
+              <li><a href="#"><img src="./src/series.png" alt="Series"> Series</a></li>
+              <li><a href="#"><img src="./src/fav.png" alt="Favoritos"> Favoritos</a></li>
+              <li><a href="#"><img src="./src/tendencias.png" alt="Tendencias"> Tendencias</a></li>
+
+
+          </ul>
+      </nav>
+      <a href="registro.html" class="btn"> <button>Registrarse</button></a>
+
+  </header>
+
+    <div class="container-cool">
+
+    
+    
+
+    <div class="container-ul">
+      <h1>Agregar serie</h1>
+      <form action="agregar.php" method="post">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" placeholder="Título" />
+        <label for="titulo">Sipnosis:</label>
+        <input
+          type="text"
+          id="sipnosis"
+          name="sipnosis"
+          placeholder="Sipnosis"
+        />
+        <label for="temporadas">Temporadas:</label>
+        <input
+          type="number"
+          id="temporadas"
+          name="temporadas"
+          placeholder="Temporadas"
+        />
+        <label for="episodios">Episodios:</label>
+        <input
+          type="number"
+          id="episodios"
+          name="episodios"
+          placeholder="Episodios"
+        />
+        <label for="imagen">Imagen:</label>
+        <input type="file" id="imagen" name="imagen" />
+        <a href="index.html"><button  class="buttoncolor">Agregar</button></a>
+        
+      </form>
+    </div>
+  </div>
+  <script src="index.js"></script>
+  </body>
+</html>

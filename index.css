@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+body{
+    background-color:#1c0628;
+
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100; 
+    background-color: #1c5560;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{ 
+   
+    height: 70px;
+    width: auto;
+    transition: all 0.3s ;
+   
+}
+.header .logo img:hover{
+    transform: scale(1.5);
+}
+.header .nav-links{
+    list-style: none;
+}
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.header .nav-links li:hover{
+    transform: scale(1.3);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+    color: #fbffcd;
+}
+.header .btn button{
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:  all 0.3s ease 0s;
+    
+}
+.header .btn button:hover{
+    background-color: #1b3039;
+    color: #eceff1;
+    transform: scale(1.3);
+}
+.nav-links a img {
+    width: 25px; 
+    height: auto;
+    margin-right: 5px; 
+}
+
+
+
+
+.blue-space {
+    background-color:  #001f36;
+    padding: 36px;
+    text-align: center;
+    color: white;
+    
+}
+
+
+
+
+.btn2 button{
+    margin-top: 30px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:  all 0.3s ease 0s;
+    
+}
+.btn2 button:hover{
+    background-color: #1b3039;
+    color: #eceff1;
+    transform: scale(1.3);
+}
+
+
+.slider-box{
+    width: 800px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+
+}
+
+.slider-box img {
+    opacity: 0.7; 
+  }
+.texto{
+   
+    position: absolute;
+    text-align: center;
+    padding: 0 35px;
+    top: 100px;
+    color: #ffffff;
+    font-size: 15px;
+
+}
+
+
+.slider-box img{
+    width: 100%;
+}
+
+.texto-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: bold;
+ 
+}
+.fans {
+  
+  font-size: 4rem;
+  color: #740050;
+  margin-right: 0.5rem;
+}
+.wiki {
+  font-size: 4rem;
+  color: #ffffff;
+  margin-right: 0.5rem;
+}
+
+
+
+
+
+@keyframes slide{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+   
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+@media(max-width:991px){
+    body{
+        padding: 30px;
+    }
+    .slider-box{
+        width: 100%;
+    }
+    .texto{
+        top: 50px;
+        padding: 0 25px;
+    }
+    .texto h2{
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+    .texto p{
+        font-size: 15px;
+    }
+}
+
+
+.dark-space {
+  background-color:  #1c0628;
+    padding: 30px;
+  text-align: center;
+  color: white;
+
+ 
+  align-items: center;
+   
+
+  
+}
+
+.dark-space .panel{
+  
+  background-color: #131e40;
+  padding: 40px;
+}
+
+
+
+
+
+
+
+
+h4, h2,small{
+    margin-top: 30px;
+    padding: 0;
+    
+}
+a{
+    text-decoration: none;
+}
+.Carousel{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.Carousel h2{
+    font-size: 26px;
+    line-height: 38px;
+    padding-bottom: 24px;
+    opacity: .9;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+/* imagenes */
+
+.slick-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+.slick{
+    position: relative;
+    width: 275px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+.slick h4{
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 23px;
+    color: #fff;
+    padding: 15px;
+}
+.slick h4 small{
+    font-size: 15px;
+    display: block;
+}
+.slick a img{
+    opacity: .5;
+    object-fit: cover;
+    height:300px;
+    width: 230px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+    transition: .3s ease-in-out;
+}
+.slick a img:hover{
+    opacity: .95;
+}
+
+/* buttons */
+
+.slick-arrow{
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
+    cursor: pointer;
+}
+.slick-arrow:focus{
+    outline: 0;
+}
+.slick-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: rgba(0,0,0,.7);
+}
+.slick-prev{
+    left: 0px;
+}
+.slick-next{
+    right: 0px;
+}
+
+
+
+footer{
+    width: 100%;
+    background-color: #1b3039;
+    position: absolute;
+    left: 0;
+    padding: 2px 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #eceff1;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 25px;
+    color: #1c0628;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: #131e40;
+    transition: 0.5s;
+}
+
+
+.socialIcons a:hover i{
+    color: #eceff1;
+    transition: 0.5s;
+}
+
+.footerThings{
+    margin: 30px 0;
+
+}
+
+.footerThings ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footerThings ul li a{
+    color: #eceff1;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerThings ul li a:hover{
+    opacity: 1;
+
+}
